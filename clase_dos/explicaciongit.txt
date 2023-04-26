@@ -1,0 +1,10 @@
+
+app manzana
+verison 1.0.0 => mi aplacion tiene el login, el register y la interaccion con camara.
+1.0.1 => correccion (parche para colucionar)
+1.1.0 => nueva interaccion (nueva accion/tarea)
+//error desda la 1.1 se decide downgradear a la 1.0
+
+cada vez que hagamos un guardado de version se le llama COMIT
+
+git es un sistema de verisonado.
