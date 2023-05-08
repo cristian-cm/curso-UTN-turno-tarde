@@ -34,7 +34,9 @@
 <!-- lista de definiciones -->
 <dl>
     <dt>argentina</dt>
-    <dd></dd>
+    <dd> argentina tiene mas de 42 millones de habitantes...
+        
+    </dd>
 </dl>
 <!-- formularios -->
 <hr>
@@ -46,11 +48,52 @@
 <form action="/datos.js" method="post"> 
     <label for="nombre">nombre</label> <!-- informacion -->
     <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required> <!-- donde el usuario pude escribir texto -->
+    <br>
+    <label for="apellido">apellido</label>
+    <input type="text" name="apellido" min="4" maxlength="30" required>
+    <br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" pattern="" autofocus> <!-- se busca en internet -->
+    <br>
+    <label for="edad">edad</label>
+    <input type="number" name="edad" min="10" max="100">
+    <br>
+    <label for="password">password</label>
+    <input type="password" pattern=""> <!-- buscar en internet -->
+    <br>
+    <label for="password">repetir password: </label>
+    <input type="password" pattern=""> <!-- copio el anterior -->
+    <br>
+    <label for="provincia">provincia</label>
+    <select name="provincia" id="provincia">
+    <optgroup>
+        <option value="CABA">CABA</option>
+        <option value="GBA">GBA</option>
+        <option value="OTRO">OTRO</option>
+    </optgroup>
+    </select>
+    <br>
+    <label for="genero">genero</label>
+    <div>
+        <input type="radio" name="genero" value="femenino"> femenino
+        <input type="radio" name="genero" value="masculino"> masculino
+        <input type="radio" name="genero" value="otro"> OTRO
+
+    </div>
+
+
+
+
+
+    <div>
+        <input type="submit" value="enviar datos">
+    </div>
 
 </form>
+<br>
 
 <body>
-    en esta va el contenido <!-- cuerpo de la pagina -->
+     <!-- cuerpo de la pagina -->
 <!-- comentarios para ayuda memoria o comentar codigos -->
 
 </html
