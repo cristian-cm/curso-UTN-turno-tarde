@@ -1,0 +1,12 @@
+/* selector global de html */
+* {
+
+}
+/* selector de clase */
+.segundo{
+    color: green;
+}
+/* selector de ID */
+#unico{
+    color: violet
+}
