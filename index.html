@@ -7,7 +7,7 @@
 <!-- predetrminado -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- el ancho de la pagina se adapta/ajusta al ancho del dispositivo -->
-    <link rel="stylee">
+    <link rel="style">
     <title> Clase 2 UTN </title>
     <!-- titulo de la pagina para que el browser muestre -->
 </head>
@@ -15,7 +15,7 @@
     <!-- ruta absoluta -->
     <ul>
         <li>
-             <a href="../curso-UTN-turno-tarde/index.html">
+             <a href="../curso-UTN-turno-tarde/">
         </li>
     </ul>
 
@@ -58,23 +58,23 @@
 <hr>
 <!-- a donde va la info - como se envian-->
 <form action="/datos.js" method="post"> 
-    <label for="nombre">nombre</label> <!-- informacion -->
+    <label for="nombre">nombre</label required> <!-- informacion -->
     <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required> <!-- donde el usuario pude escribir texto -->
     <br>
     <label for="apellido">apellido</label>
     <input type="text" name="apellido" min="4" maxlength="30" required>
     <br>
     <label for="email">email</label>
-    <input type="email" name="email" id="email" pattern="" autofocus> <!-- se busca en internet -->
+    <input type="email" name="email" id="email" pattern="" autofocus required> <!-- se busca en internet -->
     <br>
     <label for="edad">edad</label>
     <input type="number" name="edad" min="10" max="100">
     <br>
     <label for="password">password</label>
-    <input type="password" pattern=""> <!-- buscar en internet -->
+    <input type="password" id="password" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/;"> <!-- buscar en internet -->
     <br>
     <label for="password">repetir password: </label>
-    <input type="password" pattern=""> <!-- copio el anterior -->
+    <input type="password" id="otropassword" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/;"> <!-- copio el anterior -->
     <br>
     <label for="provincia">provincia</label>
     <select name="provincia" id="provincia">
@@ -110,5 +110,8 @@
     
      <!-- cuerpo de la pagina -->
 <!-- comentarios para ayuda memoria o comentar codigos -->
+
+<script src="./js/index.js"></script>
+</body>
 
 </html
