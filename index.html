@@ -7,20 +7,11 @@
 <!-- predetrminado -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- el ancho de la pagina se adapta/ajusta al ancho del dispositivo -->
-    <link rel="style">
+
     <title> Clase 2 UTN </title>
     <!-- titulo de la pagina para que el browser muestre -->
 </head>
-<h2>
-    <!-- ruta absoluta -->
-    <ul>
-        <li>
-             <a href="../curso-UTN-turno-tarde/">
-        </li>
-    </ul>
 
-
-</h2>
 <link rel="stylesheet" href="./css/index.css">
 
 <h1> PROYECTO Nº2 </h1>
@@ -59,10 +50,10 @@
 <!-- a donde va la info - como se envian-->
 <form action="/datos.js" method="post"> 
     <label for="nombre">nombre</label required> <!-- informacion -->
-    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required> <!-- donde el usuario pude escribir texto -->
+    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre"> <!-- donde el usuario pude escribir texto -->
     <br>
     <label for="apellido">apellido</label>
-    <input type="text" name="apellido" min="4" maxlength="30" required>
+    <input type="text" name="apellido" min="4" maxlength="30">
     <br>
     <label for="email">email</label>
     <input type="email" name="email" id="email" pattern="" autofocus required> <!-- se busca en internet -->
